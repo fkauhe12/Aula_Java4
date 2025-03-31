@@ -3,6 +3,12 @@ public class Conta {
     String nometitular;
     double saldo;
     //Método construtor
+    public Conta(int numero, String nometitular) {
+        this.numero = numero;
+        this.nometitular = nometitular;
+    }
+
+    //Método
     public void ImprimirExtrato() {
         System.out.println("=== Extrato da Conta ===");
         System.out.println("Número da conta: " + this.numero);

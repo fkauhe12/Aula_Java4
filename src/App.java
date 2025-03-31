@@ -1,19 +1,14 @@
 public class App {
     public static void main(String[] args) {
         //Criar Objeto Conta
-        Conta minhaConta = new Conta();
-        Conta outraConta = new Conta();
-        //Atribuir valores aos atributos
-        minhaConta.numero = 30;
-        minhaConta.nometitular = "Felipe";
-        minhaConta.saldo = 1000;
-
-        outraConta.numero = 40;
-        outraConta.nometitular = "Ana";
-        outraConta.saldo = 2000;
+        Conta minhaConta = new Conta(30, "Felipe");
+        Conta outraConta = new Conta(20, "Samuel");
 
         //Imprimir os valores dos atributos
-        minhaConta.Depositar(800);
+        minhaConta.Depositar(1000);
+        System.out.println("\n");
+
+        outraConta.Depositar(5000);
         System.out.println("\n");
 
         minhaConta.Sacar(200);
